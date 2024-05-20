@@ -27,6 +27,7 @@ instructions:
 1. Fork and clone this repo into a folder on your machine. 
 2. `cd` into that folder `cd my-project-name`
 3. Delete the git history: `rm -rf .git`
+4. Install the necessary dependencies - run `npm install` in the folder where the package.json is located. 
 
 The following can all be found under the "scripts" section in your
 `package.json`. You can add more scripts here if you like, and run them with
