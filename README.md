@@ -24,7 +24,7 @@ npm install
 If for some reason `degit` doesn't work for you, you can instead follow these
 instructions:
 
-1. Clone this repo into a folder on your machine. eg.
+1. Fork and clone this repo into a folder on your machine. eg.
    `git clone git@github.com:makersacademy/react-template.git my-project-name`
 2. `cd` into that folder `cd my-project-name`
 3. Delete the git history: `rm -rf .git`
