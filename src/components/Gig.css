@@ -1,0 +1,43 @@
+/* Styles for the main heading of the gig */
+.gig-heading {
+  font-size: 80px;
+  font-weight: bold;
+  color: #010109;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Styles for the image of the gig */
+.gig-image {
+  display: block;
+  max-width: 140%;
+  height: 100;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+
+}
+
+/* Styles for the description paragraph */
+.gig-description {
+  font-size: 18px;
+  font-style: italic;
+  color: #278d3a;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Styles for the time of the gig */
+.gig-date-time {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0c0a0a;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* Styles for the venue information */
+.gig-location {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0d0707;
+  text-align: center;}
