@@ -10,7 +10,7 @@
 /* Styles for the image of the gig */
 .gig-image {
   display: block;
-  max-width: 140%;
+  max-width: 80%;
   height: 100;
   margin: 0 auto 20px auto;
   border-radius: 8px;
@@ -19,9 +19,9 @@
 
 /* Styles for the description paragraph */
 .gig-description {
-  font-size: 18px;
-  font-style: italic;
-  color: #278d3a;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3068bb;
   margin-bottom: 12px;
   text-align: center;
 }
@@ -41,3 +41,34 @@
   font-weight: bold;
   color: #0d0707;
   text-align: center;}
+
+  /* Styles for the fave button */
+
+  .gig-favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 54px;
+    color: rgb(252, 250, 250);
+  }
+  /* Styles for the heart icon */
+.gig-favorite-button .fas.fa-heart {
+  text-shadow: 2px 2px 0 #000, 
+               -2px -2px 0 #000, 
+               -2px 2px 0 #000, 
+               2px -2px 0 #000, 
+               0 2px 0 #000, 
+               0 -2px 0 #000, 
+               -2px 0 0 #000, 
+               2px 0 0 #000; /* Black outline */
+}
+
+
+  /* Hover effect for the button */
+  .gig-favorite-button:hover {
+    color: #cf6d94;
+  }
+  
+  .gig-favorite-button.favorited {
+    color: rgb(208, 12, 87);
+  }

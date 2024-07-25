@@ -1,18 +1,24 @@
 import React from "react";
-import Catfish from "../assets/Catfish.jpg"
 import "./Gig.css"
-import Button from "./Button"
-import "./Button.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const Gig = () => {
+
+const Gig = (props) => {
   return (
       <>
-      <h3 className="gig-heading">Catfish and the Bottlemen</h3>
-      <img src={Catfish} alt="Catfish and the Bottlemen" style={{ width: "300px", height: "auto" }}></img>
-      <p className="gig-description">Join CATB on their next tour of the UK!</p>
-      <p className="gig-date-time">7pm on 12/08/24</p>
-      <p className="gig-location">Alexandra Pallace - Doors open 6pm</p>
-      <Button label="Get Tickets Here!" />
+      <h3 className="gig-heading">{props.heading}
+        <button className={`gig-favorite-button ${props.isFavorite ? "favorited" : ""}`}
+        onClick={props.toggleFavorite}>
+        <i className="fas fa-heart"></i>
+      </button>
+      </h3>
+
+      <img className="gig-image" src={props.image} alt="Catfish and the Bottlemen"></img>
+      <p className="gig-description">{props.description}</p>
+      <p className="gig-date-time">{props.dateAndTime}</p>
+      <p className="gig-location">{props.location}</p>
+      
+      
       </>
     );
 };
