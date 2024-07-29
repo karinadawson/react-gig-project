@@ -10,20 +10,44 @@
 /* Styles for the image of the gig */
 .gig-image {
   display: block;
-  max-width: 80%;
-  height: 100;
+  max-width: 60%;
+  height: 80;
   margin: 0 auto 20px auto;
-  border-radius: 8px;
+  border-radius: 40px;
+  border: 5px solid black;
+
+  ;
 
 }
 
 /* Styles for the description paragraph */
 .gig-description {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  color: #3068bb;
+  color: #05090e;
   margin-bottom: 12px;
-  text-align: center;
+  position: relative;
+  padding: 0 2em; /* Add some padding to make room for the icons */
+}
+
+.gig-description::before,
+.gig-description::after {
+  content: '\f7a6''\f7a6'; /* Unicode for the guitar icon in Font Awesome */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Font Awesome solid style */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3068bb;
+}
+
+.gig-description::before {
+  left: 0;
+}
+
+.gig-description::after {
+  right: 0;
+
 }
 
 /* Styles for the time of the gig */
@@ -72,3 +96,5 @@
   .gig-favorite-button.favorited {
     color: rgb(208, 12, 87);
   }
+
+  

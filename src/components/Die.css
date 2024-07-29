@@ -1,0 +1,22 @@
+/* Styles for the dice button */
+
+.dice-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Size of the dice button */
+    height: 100px; /* Ensures the button is square */
+    background: white; /* Background color of the dice button */
+    border: 5px solid black; /* Black border with solid style */
+    border-radius: 8px; /* Optional: slightly rounded corners for a 3D effect */
+    display: flex; /* Center contents horizontally and vertically */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 40px;
+    font-weight: 200; /* Font size for text or symbols inside the button */
+    color: rgb(2, 2, 2); /* Text color, if needed */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for a lifted effect */
+  }
